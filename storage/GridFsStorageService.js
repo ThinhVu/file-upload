@@ -40,7 +40,7 @@ class GridFsStorageService extends IStorageService {
 
   async getUploadForm(fileName) {
     const uploadFileName = uuidv1() + path.parse(fileName).ext;
-    return { src: `${this.fileRoute}/${uploadFileName}`, form: {} }
+    return { src: `${this.fileRoute}/${uploadFileName}`, form: { /* add extra hidden field to extend upload function, restriction, timeout etc */ } }
   }
 
   async getEtag(fileName) {
