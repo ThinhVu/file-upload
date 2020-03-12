@@ -1,19 +1,15 @@
 class IStorageService {
   constructor(options) {}
 
-  getUploadForm() {
+  async getUploadForm() {
     throw 'Not implemented'
   }
 
-  getEtag(fileName) {
+  async getEtag(fileName) {
     throw 'Not implemented'
   }
 
-  deleteFile(fileName) {
-    throw 'Not implemented'
-  }
-
-  downloadFile(fileName) {
+  async deleteFile(fileName) {
     throw 'Not implemented'
   }
 }
